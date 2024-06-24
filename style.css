@@ -1,0 +1,324 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Layout width and styling*/
+
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.container-fluid {
+    width: 100%;
+}
+
+section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.brand-primary {
+    background-color: #93b458;
+}
+
+.brand-secondary {
+    background-color: #f0f0ea;
+}
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 2;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+/*Flex properties*/
+
+.row {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+
+/*pages headings */
+
+h1 {
+    font-size: 35px;
+}
+
+h2 {
+    font-size: 32px;
+}
+h3 {
+    font-size: 28px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'LXGW WenKai Mono TC', sans-serif;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.page-title {
+    color: #44512e;
+    font-family: 'Lato', sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.caption-text {
+    font-size: 26px;
+    margin-bottom: 15px;
+    background-color: #556b2f;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-style: italic;
+    display: table;
+}
+
+.heading-title {
+    color: #556b2f;
+}
+
+
+/* utility classes */
+
+.no-space {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.img-fluid {
+    max-width: 100%;
+    width: 100%;
+}
+
+.mt-15 {
+    margin-top: 15px;
+}
+.mb-15 {
+    margin-bottom: 15px;
+}
+.p-15 {
+    padding:15px;
+}
+.mb-0 {
+margin-bottom: 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.relative {
+    position: relative;
+}
+
+.font-size-22 {
+font-size: 22px;
+} 
+
+/* Styling For Header */
+
+header {
+    background: #e3e3df;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/*styling for header nav*/
+
+nav > ul {
+    display: flex;
+    gap: 45px;
+    justify-content: center;
+
+}
+
+nav a {
+    font-family: 'LXGW WenKai Mono TC', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    color: #556b2f;
+    font-weight: bold;
+}
+
+nav .active a, a:hover {
+    color: #82a14b;
+    text-decoration: underline;
+}
+
+/* dropdown classes */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    z-index: 1;
+}
+
+/* footer styling */
+
+footer nav a {
+    font-size: 1em;
+}
+
+
+footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+address {
+    font-size: 14px;
+    color: white;
+    font-style: normal;
+    padding: 0 15px;
+    letter-spacing: 1.5px;
+    border-top: 2px solid #FFFFFF;
+    display: block;
+}
+address span {
+    padding-top: 15px;
+    display: block;
+}
+
+
+
+
+
+
+/* form styling */
+
+input[type="text"], textarea {
+    background: none;
+    border: 1px solid #44512e;
+    color: #44512e;
+    display: table;
+    height: 38px;
+    padding-left: 15px;
+    line-height: 38px;
+    max-width: 100%;
+    width: 90%;
+    margin-bottom: 15px;
+}
+
+textarea {
+    height: 200px;
+}
+
+/*button styling*/
+
+input#submit {
+    background: none;
+    border: 2px solid #44512e;
+    color: #44512e;
+    cursor: pointer;
+    font-weight: 500;
+    height: 40px;
+    text-transform: uppercase;
+    width: 141px;
+}
+
+input#submit:hover {
+    background-color: #93b458;
+    border: none;
+}
+
+
+
+/* media queries */
+
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+    .col {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .d-flex-none {
+    display: block;
+    text-align: center;
+    }
+    .row > div {
+        padding: 0 15px;
+
+    }
+}
+
+/* Desktop Styles */
+
+@media (min-width: 768px) {
+    
+    .col-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .col-4 {
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+    }
+
+     .col-9 {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    .col {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .pl-md-30 {
+        padding-left: 30px;
+
+    }
+
+    /* Contact page styling */
+
+    .contact-details {
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        background: rgb(255 255 255 / 75%);
+        padding: 20px 45px;
+    }
+}
+

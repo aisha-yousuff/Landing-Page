@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refresh | Contacts</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <!-- header start here -->
+    <header>
+        <div class="container">
+            <div class="row space-between align-items-center d-flex-none">
+                <a href="index.html" class="logo">
+                    <img src="Screenshot_2024-06-20_161438-removebg-preview.png" alt="Logo" class="logo" width="150px" height="50px" >
+                </a>
+                <nav>
+                     <ul>
+                        <li>
+                             <a href="index.html"> 
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="about.html">
+                                <span>About</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="product.html">
+                                        <span>Product</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="active">
+                            <a href="contact.html">
+                                <span>Contact</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+        </div>
+        </div>
+    </header>
+    <!-- header end here -->
+
+    <main>
+    <!-- title section start here -->
+        <section class="title-section brand-primary">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <h1 class="page-title">Contact</h1>
+                </div>            
+            </div>
+        </section>
+    <!-- title section end here -->
+
+    <!-- banner section start here -->
+       <section class="banner-section no-space relative">
+            <figure>
+                <img src="map.jpg" class="img-fluid">
+            </figure>
+            <div class="contact-details text-center">
+            	<h2 class="font-size-22 mb-0">UNIT 0123 , ABC BUILDING, BUSSINESS PARK</h2>
+            	<p>If you want to work with us, or have a suggestion just fill out the form down below!</p>
+            </div>
+        </section>
+    <!-- banner section start here -->
+    
+    <!-- inquiry-form section start here -->
+        <section class="inquiry-form-section">
+            <div class="container">
+                <div class="row d-flex-none">
+                    <div class="col-9">
+                        <h2 class="heading-title">
+                            INQUIRY FORM
+                        </h2>
+                        <form action="index.html">
+						<input type="text" name="Name" value="Name" onblur="this.value=!this.value?'Name':this.value;" onfocus="this.select()" onclick="this.value='';">
+						<input type="text" name="Email" value="Email" onblur="this.value=!this.value?'Email':this.value;" onfocus="this.select()" onclick="this.value='';">
+						<input type="text" name="Subject" value="Subject" onblur="this.value=!this.value?'Subject':this.value;" onfocus="this.select()" onclick="this.value='';">
+						<textarea name="meassage" cols="50" rows="7">Share your thoughts</textarea>
+						<input type="submit" value="Send" id="submit">
+					</form>
+                    </div>
+                    <div class="col-3 brand-secondary">
+                	 	<div class="content-area p-15">
+                        <h3 class="heading-title">
+                           WE’D LOVE TO HEAR FROM YOU.
+                        </h3>
+                        <p>
+                        	If you want to work with us, or have a suggestion just fill out the form on the left.
+
+                        </p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- inquiry-form section start here -->
+
+    <!-- footer start here -->
+        <footer class="brand-primary">
+            <div class="container-fluid text-center">
+                <figure class="mb-15">
+                   <img src="Screenshot_2024-06-20_161438-removebg-preview.png" width="150px" height="50px" alt="">
+                </figure> 
+                <nav>   
+                    <ul>
+                        <li>
+                            <a href="index.html">
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li class="menu">
+                            <a href="about.html">
+                                <span>About</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="product.html">
+                                <span>Product</span>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="contact.html">
+                                <span>Contact</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                 <address class="mt-15">
+                    <span> All Rights Reserved ©2024,  <br> Designed by Aisha Yousuf
+                    </span>
+                </address>      
+            </div>
+        </footer>
+    <!-- footer end here -->
+
+    </main>
+</body>
+</html>
